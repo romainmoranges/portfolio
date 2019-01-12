@@ -1,0 +1,19 @@
+Se servir des sprite svg
+
+-- d'abord include le svgsrpite en php : 
+
+<div class='svgsrpite'>
+<?php include './img/sprite_css_pictos.svg'; ?>
+</div>
+
+(styliser le .svgsrpite pour lui mettre width et height = 0)
+
+
+-- puis utiliser svg use avec le #
+
+<!-- 
+    <h3>Exemple utilisation de svg</h3>
+        <svg class='svgicon'>
+        <use xlink:href="#greeting"></use>
+    </svg> 
+-->
