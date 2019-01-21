@@ -365,12 +365,20 @@ template {
   display: block !important;
 }
 
+.display-flex {
+  display: flex !important;
+}
+
 img {
   width: 100%;
 }
 
 .img {
   width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Mobile First */
@@ -397,7 +405,14 @@ a {
   font-family: "Raleway-Regular";
 }
 
-h1, h2, h3, h4 {
+a:hover {
+  font-family: "Raleway-Bold";
+}
+
+h1,
+h2,
+h3,
+h4 {
   font-family: "Raleway-Bold";
 }
 
@@ -438,6 +453,10 @@ a:hover {
   width: 30px;
   height: 30px;
   right: 5px;
+}
+
+.menu-desktop {
+  display: none;
 }
 
 .menu-mobile {
@@ -521,15 +540,21 @@ section#portfolio .categories ul {
   text-align: center;
 }
 
-section#portfolio .more svg {
+section#portfolio .more {
   width: 40px;
   height: 40px;
+}
+
+section#portfolio .more svg {
+  width: 100%;
+  height: 100%;
   padding: 5px;
   fill: #FFF;
   font-size: 24px;
   text-align: center;
   border: solid #FFF 2px;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 section#portfolio .item {
@@ -556,13 +581,110 @@ section#mecontacter {
   background-color: #1f1f1f;
 }
 
+section#mecontacter form label {
+  width: 100%;
+  margin: 10px auto;
+}
+
+section#mecontacter form label input,
+section#mecontacter form label textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: #333333;
+  color: #FFF;
+}
+
+section#mecontacter form .submit {
+  border-radius: 5px;
+  border: none;
+  display: block;
+  margin: auto;
+  background: #333333;
+  color: #FFF;
+  cursor: pointer;
+}
+
 /* Portfolio */
 /* tablet */
 /* laptop */
 @media screen and (min-width: 992px) {
-  section {
+  #button {
+    display: none;
+  }
+  .menu-desktop {
+    display: block;
+    width: 20%;
+    border-right: 2px solid #FFF;
     min-height: 100vh;
     max-height: 100vh;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+  }
+  .menu-desktop h1 {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  }
+  .menu-desktop .main-nav {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    border-top: solid white 3px;
+    border-bottom: solid white 3px;
+  }
+  .menu-desktop .main-nav a {
+    font-size: 1.6em;
+  }
+  .menu-desktop .social-nav {
+    height: 20vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .menu-desktop .social-nav li {
+    width: 33%;
+    align-self: center;
+  }
+  .menu-desktop .social-nav li a {
+    font-size: 2em;
+  }
+  .menu-desktop .social-nav p {
+    align-self: flex-end;
+    justify-self: center;
+  }
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: right;
+  }
+  section .inner {
+    width: 75% !important;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  section .inner h2 {
+    font-size: 4em;
+  }
+  section .inner p {
+    font-size: 1.6em;
+  }
+  section#portfolio .item .img-projet {
+    display: none;
+    flex-wrap: wrap;
+  }
+  section#portfolio .item .img-projet .img {
+    width: 49%;
+    margin: 10px auto;
   }
 }
 

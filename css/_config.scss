@@ -19,6 +19,9 @@
     display: block !important;
 }
 
+.display-flex {
+    display: flex !important;
+}
 
 img {
     width: 100%;
@@ -26,4 +29,8 @@ img {
 
 .img {
     width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }

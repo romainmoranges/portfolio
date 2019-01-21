@@ -54,13 +54,48 @@
 
     </nav>
 
+    <nav class='menu-desktop'>
+        <h1>Romain <br />Moranges</h1>
+        <ul class="main-nav">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">A Propos</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#mecontacter">Me Contacter</a></li>
+        </ul>
+        <ul class="social-nav">
+            <li>
+                <a href="#">
+                    <svg class='svgicon'>
+                        <use xlink:href="#linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class='svgicon'>
+                        <use xlink:href="#github"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class='svgicon'>
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <p><a href="#">Mentions légales</a></p>
+        </ul>
+
+    </nav>
+
     <section id="accueil">
         <div class="inner">
             <h2>Accueil</h2>
-            <p class="accueil">
+            <p>
                 Bienvenue, je suis Romain Moranges!</p>
             <p>Je suis étudiant à l'université Aix-Marseille, en Licence Professionnelle MIW, formant des développeurs
-                web. Ici j'apprends les compétences nécessaires pour exercer convenablement le métier de développeur.
+                web. Ici j'apprends les compétences nécessaires pour exercer le métier de développeur.
             </p>
             <p>Dans la continuité de ma démarche, je suis à la recherche d'un stage! D'une durée d'au moins 12
                 semaines, il me permettra d'affiner mes connaissances et de m'apporter une expérience au sein d'un
@@ -77,10 +112,10 @@
                 possibilité m'a passionné. De la musique au jeu vidéo en passant par le cinéma, il est possible de tout
                 découvrir!</p>
             <p>Ainsi, après l'obtention de mon <span>baccalauréat économique et social</span> en 2016, j'ai décidé de
-                me diriger vers un <span>DUT Métiers du Multimédia et de l'Internet</span>. Là bas, j'ai pu en savoir
+                me diriger vers un <span>DUT Métiers du Multimédia et de l'Internet</span>, que j'ai décroché en 2018. Là bas, j'ai pu en savoir
                 plus sur les différents métiers liés à la création numérique, comme l'infographie, l'audiovisuel ou la
                 création de site web. Après un certain temps de réflexion, j'ai choisi de suivre cette dernière voie:
-                le développement web. Vous pouvez retrouver mon CV en téléchargement <a href="#">ici</a>.</p>
+                le développement web. <span>Vous pouvez retrouver mon CV en téléchargement <a href="#">ici</a><span>.</p>
             <p>C'est un domaine où la rigueur est de mise! Pas de place à l'improvisation. Il s'agit d'être précis et
                 organisé dans sa méthode. Ce qui m'attire le plus ici, c'est l'envergure de la courbe de progression:
                 il est presque impossible de ne plus rien avoir à apprendre.
@@ -124,22 +159,22 @@
     <section id="mecontacter">
         <div class="inner">
             <h2>Me Contacter</h2>
-            <p>Vous pouvez me contacter par mail grâce au formulaire suivant:</p>
+            <p>Vous pouvez me contacter par mail à l'aide du formulaire suivant:</p>
             <form action="">
                 <label for="nom">
                     <h4>Nom</h4>
-                    <input type="text" placeholder="Votre nom...">
+                    <input id="nom" type="text" placeholder="Votre nom...">
                 </label>
                 <label for="email">
                     <h4>Email</h4>
-                    <input type="email" placeholder="Votre mail...">
+                    <input id="email" type="email" placeholder="Votre mail...">
                 </label>
                 <label for="message">
                     <h4>Message</h4>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Ecrivez votre message..."></textarea>
+                    <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message..."></textarea>
                 </label>
 
-                <input type="button" value="Envoyer le message">
+                <input class='submit' type="button" value="Envoyer le message">
 
             </form>
 

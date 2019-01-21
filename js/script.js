@@ -20,6 +20,6 @@ button.addEventListener('click', function () {
 
 for (let i= 0; i< document.getElementsByClassName('more').length; i++ ) {
     document.getElementsByClassName('more')[i].onclick= () => {
-        document.getElementsByClassName('img-projet')[i].classList.toggle('display');
+        document.getElementsByClassName('img-projet')[i].classList.toggle('display-flex');
     }
 }
