@@ -389,142 +389,64 @@ h2,
 h3,
 h4 {
   color: #FFF;
-  /* Menu */
-  /* Portfolio */
-  /* tablet */
-  /* laptop */
 }
 
-p p,
-a p,
-h1 p,
-h2 p,
-h3 p,
-h4 p {
+p {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: "Raleway-Regular";
 }
 
-p p span,
-a p span,
-h1 p span,
-h2 p span,
-h3 p span,
-h4 p span {
+p span {
   font-weight: bold;
 }
 
-p a,
-a a,
-h1 a,
-h2 a,
-h3 a,
-h4 a {
+a {
   font-family: "Raleway-Regular";
 }
 
-p a:hover,
-a a:hover,
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover {
+a:hover {
   font-family: "Raleway-Bold";
 }
 
-p h1,
-p h2,
-p h3,
-p h4,
-a h1,
-a h2,
-a h3,
-a h4,
-h1 h1,
-h1 h2,
-h1 h3,
-h1 h4,
-h2 h1,
-h2 h2,
-h2 h3,
-h2 h4,
-h3 h1,
-h3 h2,
-h3 h3,
-h3 h4,
-h4 h1,
-h4 h2,
-h4 h3,
-h4 h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Raleway-Bold";
 }
 
-p .inner,
-a .inner,
-h1 .inner,
-h2 .inner,
-h3 .inner,
-h4 .inner {
+.inner {
   width: 85%;
   margin: auto;
 }
 
-p h2,
-a h2,
-h1 h2,
-h2 h2,
-h3 h2,
-h4 h2 {
+h2 {
   padding: 10px 0;
 }
 
-p ul,
-a ul,
-h1 ul,
-h2 ul,
-h3 ul,
-h4 ul {
+ul {
   list-style: none;
   padding-left: 0;
 }
 
-p ul li,
-a ul li,
-h1 ul li,
-h2 ul li,
-h3 ul li,
-h4 ul li {
+ul li {
   width: 100%;
 }
 
-p ul li a,
-a ul li a,
-h1 ul li a,
-h2 ul li a,
-h3 ul li a,
-h4 ul li a {
+ul li a {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-p a:hover,
-a a:hover,
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover {
+a:hover {
   color: #FFF;
   text-decoration: none;
 }
 
-p #button,
-a #button,
-h1 #button,
-h2 #button,
-h3 #button,
-h4 #button {
+/* Menu */
+#button {
   font-size: 30px;
   position: fixed;
   z-index: 2;
@@ -533,21 +455,11 @@ h4 #button {
   right: 5px;
 }
 
-p .menu-desktop,
-a .menu-desktop,
-h1 .menu-desktop,
-h2 .menu-desktop,
-h3 .menu-desktop,
-h4 .menu-desktop {
+.menu-desktop {
   display: none;
 }
 
-p .menu-mobile,
-a .menu-mobile,
-h1 .menu-mobile,
-h2 .menu-mobile,
-h3 .menu-mobile,
-h4 .menu-mobile {
+.menu-mobile {
   width: 100%;
   min-height: 100vh;
   max-height: 100vh;
@@ -558,12 +470,7 @@ h4 .menu-mobile {
   display: none;
 }
 
-p .menu-mobile h1,
-a .menu-mobile h1,
-h1 .menu-mobile h1,
-h2 .menu-mobile h1,
-h3 .menu-mobile h1,
-h4 .menu-mobile h1 {
+.menu-mobile h1 {
   height: 24vh;
   display: flex;
   align-items: center;
@@ -571,12 +478,7 @@ h4 .menu-mobile h1 {
   font-size: 2em;
 }
 
-p .menu-mobile .main-nav,
-a .menu-mobile .main-nav,
-h1 .menu-mobile .main-nav,
-h2 .menu-mobile .main-nav,
-h3 .menu-mobile .main-nav,
-h4 .menu-mobile .main-nav {
+.menu-mobile .main-nav {
   height: 56vh;
   display: flex;
   align-items: center;
@@ -588,62 +490,32 @@ h4 .menu-mobile .main-nav {
   border-bottom: solid white 3px;
 }
 
-p .menu-mobile .main-nav a,
-a .menu-mobile .main-nav a,
-h1 .menu-mobile .main-nav a,
-h2 .menu-mobile .main-nav a,
-h3 .menu-mobile .main-nav a,
-h4 .menu-mobile .main-nav a {
+.menu-mobile .main-nav a {
   font-size: 1.6em;
 }
 
-p .social-nav,
-a .social-nav,
-h1 .social-nav,
-h2 .social-nav,
-h3 .social-nav,
-h4 .social-nav {
+.social-nav {
   height: 20vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-p .social-nav li,
-a .social-nav li,
-h1 .social-nav li,
-h2 .social-nav li,
-h3 .social-nav li,
-h4 .social-nav li {
+.social-nav li {
   width: 33%;
   align-self: center;
 }
 
-p .social-nav li a,
-a .social-nav li a,
-h1 .social-nav li a,
-h2 .social-nav li a,
-h3 .social-nav li a,
-h4 .social-nav li a {
+.social-nav li a {
   font-size: 2em;
 }
 
-p .social-nav p,
-a .social-nav p,
-h1 .social-nav p,
-h2 .social-nav p,
-h3 .social-nav p,
-h4 .social-nav p {
+.social-nav p {
   align-self: flex-end;
   justify-self: center;
 }
 
-p section,
-a section,
-h1 section,
-h2 section,
-h3 section,
-h4 section {
+section {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -651,59 +523,29 @@ h4 section {
   padding: 20px 0;
 }
 
-p section#accueil,
-a section#accueil,
-h1 section#accueil,
-h2 section#accueil,
-h3 section#accueil,
-h4 section#accueil {
+section#accueil {
   background-image: url(../img/bg/accueil.jpg);
 }
 
-p section#apropos,
-a section#apropos,
-h1 section#apropos,
-h2 section#apropos,
-h3 section#apropos,
-h4 section#apropos {
+section#apropos {
   background-image: url(../img/bg/apropos.jpg);
 }
 
-p section#portfolio,
-a section#portfolio,
-h1 section#portfolio,
-h2 section#portfolio,
-h3 section#portfolio,
-h4 section#portfolio {
+section#portfolio {
   background-image: url(../img/bg/portfolio.jpg);
 }
 
-p section#portfolio .categories ul,
-a section#portfolio .categories ul,
-h1 section#portfolio .categories ul,
-h2 section#portfolio .categories ul,
-h3 section#portfolio .categories ul,
-h4 section#portfolio .categories ul {
+section#portfolio .categories ul {
   display: flex;
   text-align: center;
 }
 
-p section#portfolio .more,
-a section#portfolio .more,
-h1 section#portfolio .more,
-h2 section#portfolio .more,
-h3 section#portfolio .more,
-h4 section#portfolio .more {
+section#portfolio .more {
   width: 40px;
   height: 40px;
 }
 
-p section#portfolio .more svg,
-a section#portfolio .more svg,
-h1 section#portfolio .more svg,
-h2 section#portfolio .more svg,
-h3 section#portfolio .more svg,
-h4 section#portfolio .more svg {
+section#portfolio .more svg {
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -715,77 +557,37 @@ h4 section#portfolio .more svg {
   cursor: pointer;
 }
 
-p section#portfolio .item,
-a section#portfolio .item,
-h1 section#portfolio .item,
-h2 section#portfolio .item,
-h3 section#portfolio .item,
-h4 section#portfolio .item {
+section#portfolio .item {
   width: 90%;
   margin: 10px auto;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-p section#portfolio .item h3,
-a section#portfolio .item h3,
-h1 section#portfolio .item h3,
-h2 section#portfolio .item h3,
-h3 section#portfolio .item h3,
-h4 section#portfolio .item h3 {
+section#portfolio .item h3 {
   padding: 5px 0;
 }
 
-p section#portfolio .item .img-projet,
-a section#portfolio .item .img-projet,
-h1 section#portfolio .item .img-projet,
-h2 section#portfolio .item .img-projet,
-h3 section#portfolio .item .img-projet,
-h4 section#portfolio .item .img-projet {
+section#portfolio .item .img-projet {
   display: none;
 }
 
-p section#portfolio .item .img-projet .img,
-a section#portfolio .item .img-projet .img,
-h1 section#portfolio .item .img-projet .img,
-h2 section#portfolio .item .img-projet .img,
-h3 section#portfolio .item .img-projet .img,
-h4 section#portfolio .item .img-projet .img {
+section#portfolio .item .img-projet .img {
   width: 90%;
   margin: 10px auto;
 }
 
-p section#mecontacter,
-a section#mecontacter,
-h1 section#mecontacter,
-h2 section#mecontacter,
-h3 section#mecontacter,
-h4 section#mecontacter {
+section#mecontacter {
   background-color: #1f1f1f;
 }
 
-p section#mecontacter form label,
-a section#mecontacter form label,
-h1 section#mecontacter form label,
-h2 section#mecontacter form label,
-h3 section#mecontacter form label,
-h4 section#mecontacter form label {
+section#mecontacter form label {
   width: 100%;
   margin: 10px auto;
 }
 
-p section#mecontacter form label input,
-p section#mecontacter form label textarea,
-a section#mecontacter form label input,
-a section#mecontacter form label textarea,
-h1 section#mecontacter form label input,
-h1 section#mecontacter form label textarea,
-h2 section#mecontacter form label input,
-h2 section#mecontacter form label textarea,
-h3 section#mecontacter form label input,
-h3 section#mecontacter form label textarea,
-h4 section#mecontacter form label input,
-h4 section#mecontacter form label textarea {
+section#mecontacter form label input,
+section#mecontacter form label textarea {
   width: 100%;
   border-radius: 5px;
   border: none;
@@ -793,12 +595,7 @@ h4 section#mecontacter form label textarea {
   color: #FFF;
 }
 
-p section#mecontacter form .submit,
-a section#mecontacter form .submit,
-h1 section#mecontacter form .submit,
-h2 section#mecontacter form .submit,
-h3 section#mecontacter form .submit,
-h4 section#mecontacter form .submit {
+section#mecontacter form .submit {
   border-radius: 5px;
   border: none;
   display: block;
@@ -808,21 +605,14 @@ h4 section#mecontacter form .submit {
   cursor: pointer;
 }
 
+/* Portfolio */
+/* tablet */
+/* laptop */
 @media screen and (min-width: 992px) {
-  p #button,
-  a #button,
-  h1 #button,
-  h2 #button,
-  h3 #button,
-  h4 #button {
+  #button {
     display: none;
   }
-  p .menu-desktop,
-  a .menu-desktop,
-  h1 .menu-desktop,
-  h2 .menu-desktop,
-  h3 .menu-desktop,
-  h4 .menu-desktop {
+  .menu-desktop {
     display: block;
     width: 20%;
     border-right: 2px solid #FFF;
@@ -832,24 +622,14 @@ h4 section#mecontacter form .submit {
     position: fixed;
     z-index: 1;
   }
-  p .menu-desktop h1,
-  a .menu-desktop h1,
-  h1 .menu-desktop h1,
-  h2 .menu-desktop h1,
-  h3 .menu-desktop h1,
-  h4 .menu-desktop h1 {
+  .menu-desktop h1 {
     height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2em;
   }
-  p .menu-desktop .main-nav,
-  a .menu-desktop .main-nav,
-  h1 .menu-desktop .main-nav,
-  h2 .menu-desktop .main-nav,
-  h3 .menu-desktop .main-nav,
-  h4 .menu-desktop .main-nav {
+  .menu-desktop .main-nav {
     height: 60vh;
     display: flex;
     align-items: center;
@@ -860,104 +640,49 @@ h4 section#mecontacter form .submit {
     border-top: solid white 3px;
     border-bottom: solid white 3px;
   }
-  p .menu-desktop .main-nav a,
-  a .menu-desktop .main-nav a,
-  h1 .menu-desktop .main-nav a,
-  h2 .menu-desktop .main-nav a,
-  h3 .menu-desktop .main-nav a,
-  h4 .menu-desktop .main-nav a {
+  .menu-desktop .main-nav a {
     font-size: 1.6em;
   }
-  p .menu-desktop .social-nav,
-  a .menu-desktop .social-nav,
-  h1 .menu-desktop .social-nav,
-  h2 .menu-desktop .social-nav,
-  h3 .menu-desktop .social-nav,
-  h4 .menu-desktop .social-nav {
+  .menu-desktop .social-nav {
     height: 20vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
-  p .menu-desktop .social-nav li,
-  a .menu-desktop .social-nav li,
-  h1 .menu-desktop .social-nav li,
-  h2 .menu-desktop .social-nav li,
-  h3 .menu-desktop .social-nav li,
-  h4 .menu-desktop .social-nav li {
+  .menu-desktop .social-nav li {
     width: 33%;
     align-self: center;
   }
-  p .menu-desktop .social-nav li a,
-  a .menu-desktop .social-nav li a,
-  h1 .menu-desktop .social-nav li a,
-  h2 .menu-desktop .social-nav li a,
-  h3 .menu-desktop .social-nav li a,
-  h4 .menu-desktop .social-nav li a {
+  .menu-desktop .social-nav li a {
     font-size: 2em;
   }
-  p .menu-desktop .social-nav p,
-  a .menu-desktop .social-nav p,
-  h1 .menu-desktop .social-nav p,
-  h2 .menu-desktop .social-nav p,
-  h3 .menu-desktop .social-nav p,
-  h4 .menu-desktop .social-nav p {
+  .menu-desktop .social-nav p {
     align-self: flex-end;
     justify-self: center;
   }
-  p section,
-  a section,
-  h1 section,
-  h2 section,
-  h3 section,
-  h4 section {
+  section {
     min-height: 100vh;
     display: flex;
     justify-content: right;
   }
-  p section .inner,
-  a section .inner,
-  h1 section .inner,
-  h2 section .inner,
-  h3 section .inner,
-  h4 section .inner {
+  section .inner {
     width: 75% !important;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  p section .inner h2,
-  a section .inner h2,
-  h1 section .inner h2,
-  h2 section .inner h2,
-  h3 section .inner h2,
-  h4 section .inner h2 {
+  section .inner h2 {
     font-size: 4em;
   }
-  p section .inner p,
-  a section .inner p,
-  h1 section .inner p,
-  h2 section .inner p,
-  h3 section .inner p,
-  h4 section .inner p {
+  section .inner p {
     font-size: 1.6em;
   }
-  p section#portfolio .item .img-projet,
-  a section#portfolio .item .img-projet,
-  h1 section#portfolio .item .img-projet,
-  h2 section#portfolio .item .img-projet,
-  h3 section#portfolio .item .img-projet,
-  h4 section#portfolio .item .img-projet {
+  section#portfolio .item .img-projet {
     display: none;
     flex-wrap: wrap;
   }
-  p section#portfolio .item .img-projet .img,
-  a section#portfolio .item .img-projet .img,
-  h1 section#portfolio .item .img-projet .img,
-  h2 section#portfolio .item .img-projet .img,
-  h3 section#portfolio .item .img-projet .img,
-  h4 section#portfolio .item .img-projet .img {
+  section#portfolio .item .img-projet .img {
     width: 49%;
     margin: 10px auto;
   }

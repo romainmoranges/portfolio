@@ -18,7 +18,8 @@
     <div id="button">
         <svg class='svgicon'>
             <use xlink:href="#menu"></use>
-        </svg> </div>
+        </svg> 
+    </div>
     <nav class='menu-mobile'>
         <h1>Romain <br />Moranges</h1>
         <ul class="main-nav">
@@ -28,26 +29,20 @@
             <li><a href="#mecontacter">Me Contacter</a></li>
         </ul>
         <ul class="social-nav">
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <svg class='svgicon'>
                         <use xlink:href="#linkedin"></use>
-                    </svg>
-                </a>
+                    </svg></a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <svg class='svgicon'>
                         <use xlink:href="#github"></use>
-                    </svg>
-                </a>
+                    </svg></a>
             </li>
-            <li>
-                <a href="#">
+            <li><a href="#">
                     <svg class='svgicon'>
                         <use xlink:href="#twitter"></use>
-                    </svg>
-                </a>
+                    </svg></a>
             </li>
             <p><a href="#">Mentions légales</a></p>
         </ul>
