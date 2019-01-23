@@ -663,7 +663,7 @@ section#mecontacter form .submit {
   section {
     min-height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
   }
   section .inner {
     width: 75% !important;
