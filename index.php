@@ -1,4 +1,18 @@
 <?php include 'header.php'; ?>
+
+<?php
+ if($_POST) {
+    $to      = 'romain.moranges@gmail.com';
+    $message = $_POST['message'];
+    $from = $_POST['email'];
+    $objet = $_POST['objet'];
+    $headers = 'From: '. $from . "\r\n" .
+        'X-Mailer: PHP/' . phpversion();
+    
+    mail($to, $objet, $message, $headers);
+ }
+
+?>
 <div id="button">
     <svg class='svgicon'>
         <use xlink:href="#menu"></use>
@@ -198,21 +212,21 @@
         <h2>Me Contacter</h2>
         <p>Vous pouvez me contacter par mail à l'aide du formulaire suivant:</p>
         <div class="contact">
-            <form action="">
-                <label for="nom">
-                    <h4>Nom</h4>
-                    <input id="nom" type="text" placeholder="Votre nom...">
+            <form action="/" method="post">
+                <label for="objet">
+                    <h4>Objet</h4>
+                    <input id="objet" type="text" name="objet" placeholder="Objet...">
                 </label>
                 <label for="email">
                     <h4>Email</h4>
-                    <input id="email" type="email" placeholder="Votre mail...">
+                    <input id="email" type="email" name="email"placeholder="Votre mail...">
                 </label>
                 <label for="message">
                     <h4>Message</h4>
                     <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message..."></textarea>
                 </label>
 
-                <h4><input class='submit' type="button" value="Envoyer le message"></h4>
+                <h4><input class='submit' type="submit" value="Envoyer le message"></h4>
 
             </form>
             <div>
