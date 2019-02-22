@@ -377,17 +377,14 @@ img {
   width: 100%;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* Mobile First */
 p,
 a,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   color: #FFF;
 }
 
@@ -447,11 +444,11 @@ a:hover {
 
 /* Menu */
 #button {
-  font-size: 30px;
+  font-size: 50px;
   position: fixed;
   z-index: 2;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   right: 5px;
 }
 
@@ -518,7 +515,7 @@ a:hover {
 section {
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
   padding: 20px 0;
 }
@@ -535,50 +532,47 @@ section#portfolio {
   background-image: url(../img/bg/portfolio.jpg);
 }
 
+section#portfolio p {
+  font-size: 1em;
+}
+
 section#portfolio .categories ul {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+section#portfolio .categories ul li {
   text-align: center;
 }
 
-section#portfolio .more {
-  width: 40px;
-  height: 40px;
-}
-
-section#portfolio .more svg {
+section#portfolio .categories ul li a {
   width: 100%;
-  height: 100%;
-  padding: 5px;
-  fill: #FFF;
-  font-size: 24px;
-  text-align: center;
-  border: solid #FFF 2px;
-  border-radius: 100%;
-  cursor: pointer;
+  padding: 10px 0;
 }
 
-section#portfolio .item {
-  width: 90%;
-  margin: 10px auto;
+section#portfolio a {
+  width: 70%;
+}
+
+section#portfolio a .item {
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-radius: 5px;
 }
 
-section#portfolio .item h3 {
-  padding: 5px 0;
-}
-
-section#portfolio .item .img-projet {
-  display: none;
-}
-
-section#portfolio .item .img-projet .img {
-  width: 90%;
-  margin: 10px auto;
+section#portfolio a .item:hover {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 section#mecontacter {
-  background-color: #1f1f1f;
+  background-image: url(../img/bg/contact.jpg);
+}
+
+section#mecontacter form {
+  margin-bottom: 24px;
 }
 
 section#mecontacter form label {
@@ -589,26 +583,64 @@ section#mecontacter form label {
 section#mecontacter form label input,
 section#mecontacter form label textarea {
   width: 100%;
-  border-radius: 5px;
   border: none;
-  background: #333333;
+  border-radius: 5px;
+  border-bottom: solid #FFF 3px;
+  background: rgba(0, 0, 0, 0.3);
   color: #FFF;
 }
 
 section#mecontacter form .submit {
   border-radius: 5px;
-  border: none;
   display: block;
   margin: auto;
-  background: #333333;
+  border: solid #FFF 2px;
+  background: rgba(0, 0, 0, 0.3);
   color: #FFF;
   cursor: pointer;
+  width: 100%;
+  padding: 10px 0px;
 }
 
 /* Portfolio */
+section#projet {
+  background-color: #2b2b2b;
+  display: block;
+  justify-content: initial;
+  min-height: 100vh;
+}
+
+section#projet .inner {
+  margin: auto;
+  text-align: center;
+}
+
+section#projet .inner a {
+  text-align: left;
+}
+
+section#projet .inner h1 {
+  font-size: 3em;
+  margin: 10px auto;
+  padding-bottom: 15px;
+  border-bottom: solid white 3px;
+}
+
+section#projet .inner p {
+  margin-top: 25px;
+}
+
+section#projet .inner .project-img {
+  width: 100%;
+  margin: auto;
+}
+
 /* tablet */
 /* laptop */
 @media screen and (min-width: 992px) {
+  html {
+    scroll-behavior: smooth;
+  }
   #button {
     display: none;
   }
@@ -627,7 +659,7 @@ section#mecontacter form .submit {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .menu-desktop .main-nav {
     height: 60vh;
@@ -664,6 +696,7 @@ section#mecontacter form .submit {
     min-height: 100vh;
     display: flex;
     justify-content: flex-end;
+    background-position: left;
   }
   section .inner {
     width: 75% !important;
@@ -678,13 +711,40 @@ section#mecontacter form .submit {
   section .inner p {
     font-size: 1.6em;
   }
-  section#portfolio .item .img-projet {
-    display: none;
-    flex-wrap: wrap;
+  section#portfolio .categories ul li {
+    width: 20%;
+    text-align: center;
+    font-size: 1.6em;
   }
-  section#portfolio .item .img-projet .img {
+  section#portfolio a {
+    margin: 10px 0;
+  }
+  section#mecontacter .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+  section#mecontacter .contact form {
     width: 49%;
-    margin: 10px auto;
+  }
+  section#mecontacter .contact form .submit {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    border: solid #FFF 2px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+    padding: 10px 00px;
+  }
+  section#mecontacter .contact div {
+    width: 45%;
+    align-self: center;
+  }
+  section#projet .inner .project-img {
+    width: 50%;
+    margin: auto;
   }
 }
 
