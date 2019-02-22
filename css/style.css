@@ -742,6 +742,18 @@ section#projet .inner .project-img {
     width: 45%;
     align-self: center;
   }
+  section#projet.developpement {
+    background: url(../img/bg/developpement.jpg);
+  }
+  section#projet.infographie {
+    background: url(../img/bg/infographie.jpg);
+  }
+  section#projet.integration {
+    background: url(../img/bg/integration.jpg);
+  }
+  section#projet.communication {
+    background: url(../img/bg/communication.jpg);
+  }
   section#projet .inner .project-img {
     width: 50%;
     margin: auto;

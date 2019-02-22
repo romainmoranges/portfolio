@@ -410,7 +410,18 @@ section#projet {
 
 
     section#projet {
-
+        &.developpement {
+            background: url(../img/bg/developpement.jpg);
+        }
+        &.infographie {
+            background: url(../img/bg/infographie.jpg); 
+        }
+        &.integration {
+            background: url(../img/bg/integration.jpg); 
+        }
+        &.communication {
+            background: url(../img/bg/communication.jpg); 
+        }
         .inner {
             .project-img {
                 width: 50%;
