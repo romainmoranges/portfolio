@@ -27,11 +27,11 @@ switch ($input) {
         <a href="/#portfolio">
             < Retour</a> 
             <h1>
-                <?= $item[0]->titre ?>
+                <?= $item[0]->titre; ?>
                 </h1>
 
                 <p>
-                    <?= $item[0]->resume ?>
+                    <?= nl2br($item[0]->resume); ?>
                 </p>
 
                 <?php 

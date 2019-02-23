@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <?php
- if($_POST) {
+ if(!empty($_POST['email'])) {
     $to      = 'romain.moranges@gmail.com';
     $message = $_POST['message'];
     $from = $_POST['email'];
@@ -44,7 +44,7 @@
                     <use xlink:href="#instagram"></use>
                 </svg></a>
         </li>
-        <p><a href="#">Mentions légales</a></p>
+        <p><a href="/mentionslegales.php">Mentions légales</a></p>
     </ul>
 
 </nav>
@@ -81,7 +81,7 @@
                 </svg>
             </a>
         </li>
-        <p><a href="#">Mentions légales</a></p>
+        <p><a href="/mentionslegales.php">Mentions légales</a></p>
     </ul>
 
 </nav>
@@ -127,7 +127,7 @@
         <h2>Portfolio</h2>
         <nav class="categories">
             <ul>
-                <li><a href="/">Tous</a></li>
+                <li><a href="/#portfolio">Tous</a></li>
                 <?php
                         
                         $req = $bdd->prepare('SELECT * FROM `categories`');
@@ -212,18 +212,18 @@
         <h2>Me Contacter</h2>
         <p>Vous pouvez me contacter par mail à l'aide du formulaire suivant:</p>
         <div class="contact">
-            <form action="/" method="post">
+            <form action="/#mecontacter" method="post">
                 <label for="objet">
                     <h4>Objet</h4>
-                    <input id="objet" type="text" name="objet" placeholder="Objet...">
+                    <input id="objet" type="text" name="objet" placeholder="Objet..." required>
                 </label>
                 <label for="email">
                     <h4>Email</h4>
-                    <input id="email" type="email" name="email"placeholder="Votre mail...">
+                    <input id="email" type="email" name="email"placeholder="Votre mail..." required>
                 </label>
                 <label for="message">
                     <h4>Message</h4>
-                    <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message..."></textarea>
+                    <textarea name="message" id="message" rows="10" placeholder="Ecrivez votre message..." required></textarea>
                 </label>
 
                 <h4><input class='submit' type="submit" value="Envoyer le message"></h4>
@@ -235,7 +235,10 @@
 
                 <h4>Adresse:</h4>
                 <p>Route d'Orcival <br>Pont des Eaux <br> 63210 Nébouzat</p>
-
+                <?php if (!empty($_POST['email'])) {
+                        echo '<h4>Votre mail a été envoyé avec succès! </h4>';
+                }
+                ?>
             </div>
         </div>
 

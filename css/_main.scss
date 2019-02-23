@@ -100,7 +100,7 @@ a:hover {
         height: 56vh;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         flex-direction: column;
         width: 80%;
         margin: auto;
@@ -237,7 +237,18 @@ section#projet {
     display: block;
     justify-content: initial;
     min-height: 100vh;
-
+    &.developpement {
+        background-image: url(../img/bg/developpement.jpg);
+    }
+    &.infographie {
+        background-image: url(../img/bg/infographie.jpg); 
+    }
+    &.integration {
+        background-image: url(../img/bg/integration.jpg); 
+    }
+    &.communication {
+        background-image: url(../img/bg/communication.jpg); 
+    }
     .inner {
         margin: auto;
         text-align: center;
@@ -262,6 +273,11 @@ section#projet {
     }
 }
 
+
+.mentionslegales {
+    min-height: 100vh;
+    background-color:#000;
+}
 /* tablet */
 @media screen and (min-width: $small) {}
 
@@ -297,7 +313,7 @@ section#projet {
             height: 60vh;
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-direction: column;
             width: 80%;
             margin: auto;
@@ -365,7 +381,7 @@ section#projet {
             ul {
                 li {
                     width: 20%;
-                    text-align: center;
+                    text-align: left;
                     font-size: 1.6em;
                 }
             }
@@ -410,18 +426,6 @@ section#projet {
 
 
     section#projet {
-        &.developpement {
-            background: url(../img/bg/developpement.jpg);
-        }
-        &.infographie {
-            background: url(../img/bg/infographie.jpg); 
-        }
-        &.integration {
-            background: url(../img/bg/integration.jpg); 
-        }
-        &.communication {
-            background: url(../img/bg/communication.jpg); 
-        }
         .inner {
             .project-img {
                 width: 50%;

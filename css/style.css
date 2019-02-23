@@ -479,7 +479,7 @@ a:hover {
   height: 56vh;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: column;
   width: 80%;
   margin: auto;
@@ -610,6 +610,22 @@ section#projet {
   min-height: 100vh;
 }
 
+section#projet.developpement {
+  background-image: url(../img/bg/developpement.jpg);
+}
+
+section#projet.infographie {
+  background-image: url(../img/bg/infographie.jpg);
+}
+
+section#projet.integration {
+  background-image: url(../img/bg/integration.jpg);
+}
+
+section#projet.communication {
+  background-image: url(../img/bg/communication.jpg);
+}
+
 section#projet .inner {
   margin: auto;
   text-align: center;
@@ -633,6 +649,11 @@ section#projet .inner p {
 section#projet .inner .project-img {
   width: 100%;
   margin: auto;
+}
+
+.mentionslegales {
+  min-height: 100vh;
+  background-color: #000;
 }
 
 /* tablet */
@@ -665,7 +686,7 @@ section#projet .inner .project-img {
     height: 60vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
     width: 80%;
     margin: auto;
@@ -713,7 +734,7 @@ section#projet .inner .project-img {
   }
   section#portfolio .categories ul li {
     width: 20%;
-    text-align: center;
+    text-align: left;
     font-size: 1.6em;
   }
   section#portfolio a {
@@ -741,18 +762,6 @@ section#projet .inner .project-img {
   section#mecontacter .contact div {
     width: 45%;
     align-self: center;
-  }
-  section#projet.developpement {
-    background: url(../img/bg/developpement.jpg);
-  }
-  section#projet.infographie {
-    background: url(../img/bg/infographie.jpg);
-  }
-  section#projet.integration {
-    background: url(../img/bg/integration.jpg);
-  }
-  section#projet.communication {
-    background: url(../img/bg/communication.jpg);
   }
   section#projet .inner .project-img {
     width: 50%;
